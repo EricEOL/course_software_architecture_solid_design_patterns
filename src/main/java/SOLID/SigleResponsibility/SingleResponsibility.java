@@ -15,7 +15,7 @@ public class SingleResponsibility {
 
         List<Integer> nums = inputNumbers();
 
-        Collections.sort(nums);
+        sortList(nums);
 
         for(int num : nums)
             System.out.print(num+" ");
@@ -64,6 +64,10 @@ public class SingleResponsibility {
             return false;
         }
         return true;
+    }
+
+    public static void sortList(List<Integer> nums) {
+        Collections.sort(nums);
     }
 }
 
